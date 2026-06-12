@@ -26,7 +26,7 @@ Karabiner-Elementsでは、デバイスごとに設定を自由に変えられ�
 
 web開発は基本的にmacが無難だけど、wslがあるのでwindowsでもある程度は可能。
 
-ただし、flutterのwslからのAndroidSduioの起動が使えないので難しい。
+ただし、flutterのwslからのAndroidStudioの起動が使えないので難しい。
 
 xcodeは、もちろん使えない。
 
