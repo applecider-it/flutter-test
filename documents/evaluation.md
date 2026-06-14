@@ -20,6 +20,10 @@ Karabiner-Elementsで、caps lockとcmdを入れ替える。
 
 Karabiner-Elementsでは、デバイスごとに設定を自由に変えられるので、安いwindows向けの外付けキーボードも使えるようになる。
 
+windowを閉じる時は、cmd+qを使う。
+
+こうやって閉じないと、vscode, chromeなどでは、挙動がwindowsとかなり異なってくる。
+
 ここまですれば、windowsとほとんど同じ操作感になると思う。
 
 ## windowsのボーダーライン
