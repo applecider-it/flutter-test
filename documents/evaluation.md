@@ -6,7 +6,7 @@ flutterを使うなら、素直にmacにするのが正解だと思う。
 
 ## mac移行時のコツ
 
-macは、そのままでは、かなり辛いと思うので、必要最小限の変更はセットで考えた方がいいと思う。
+windowsユーザーにとって、macは、そのままでは、かなり辛いと思うので、必要最小限の変更はセットで考えた方がいいと思う。
 
 LinearMouse, Karabiner-Elements, Kekaをhomebrewからインストール。
 
@@ -16,13 +16,17 @@ Kekaのfinder拡張を有効化する。
 
 Karabiner-Elementsで、caps lockとcmdを入れ替える。
 
-設定 -> キーボード -> 入力ソース、でライブ変更を無効にして、caps lockを入力モードの切り替えに変える。
+設定 -> キーボード -> 入力ソース、でライブ変更を無効にして、caps lockを「入力モードの切り替え」に変える。
 
 Karabiner-Elementsでは、デバイスごとに設定を自由に変えられるので、安いwindows向けの外付けキーボードも使えるようになる。
 
 windowを閉じる時は、cmd+qを使う。
 
-こうやって閉じないと、vscode, chromeなどでは、挙動がwindowsとかなり異なってくる。
+こうやって閉じないと、vscode, chromeなどでは、挙動がwindowsと異なってくる。
+
+windowを最小化する時は、cmd+hを使う。
+
+こうやって最小化しないと、メニューを圧迫していく。
 
 ここまですれば、windowsとほとんど同じ操作感になると思う。
 
@@ -34,9 +38,13 @@ web開発は基本的にmacが無難だけど、wslがあるのでwindowsでも�
 
 xcodeは、もちろん使えない。
 
-wslだけで完結するシステムの場合は、windowsでも可能。
+electronは、macのほうが実装しやすい。
+
+wslだけで完結するWebアプリケーションなら、windowsでも可能。
 
 少しでもアプリがあるなら、macにした方が無難。
+
+逆に、unityだとwindows。
 
 ## その他
 
