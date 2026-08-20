@@ -48,6 +48,14 @@ wslだけで完結するWebアプリケーションなら、windowsでも可能�
 
 逆に、unityだとwindows。
 
+## mac osについて
+
+mac osは、iOS,android,windowsと違い、万人向けのOSではない。
+
+そのため、普通に利用するだけでも、ある程度の工夫が必要になる。
+
+ただ、それでも、ITエンジニアにとっては、悪くない選択肢だと思う。
+
 ## その他
 
 windowsでキーコンフィグをいじりたい場合はPowerToys。
