@@ -94,7 +94,7 @@ iOSは偶然、ちょうどいい状態で、最初に出来上がった。
 
 ### 理想のPCは、こうなる
 
-- ハードは、mac book air
+- ハードは、mac book air (ただし、Surface Laptopみたいに、USB-Aポートもついていて、イヤフォンジャックが左にある状態)
 - スペックは、mac book pro
 - OSは、unixベースのwindows（完成版であり、互換性100％）
 
