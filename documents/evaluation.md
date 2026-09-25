@@ -217,3 +217,15 @@ AIのロジック自体はCPUでも動くけど、消費電力が大きいので
 windowsでキーコンフィグをいじりたい場合はPowerToys。
 
 ただし、Karabiner-Elementsのように、デバイスごとの設定変更はできない。
+
+## OSのシェアの問題
+
+PCのOSは、ほとんどがwindows。
+
+そのため、windowsで動いて、macで動かないのは許容されることがあるけど、逆はない。
+
+そのため、macで開発しても、windowsでの動作確認も必要になる場合がある。
+
+だから、実際には、mac or windowsじゃなくて、mac+windows or windowsになる。
+
+そうなると、macとwindowsの操作を寄せておいた方が楽。
