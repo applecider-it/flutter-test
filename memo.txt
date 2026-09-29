@@ -1,0 +1,174 @@
+
+cd ~/workspace/github/flutter-test/src
+
+-----------------------------------
+
+port
+
+web: 5000
+node: 3000
+
+-----------------------------------
+
+起動
+
+下記のセットアップが済んでいる場合は、普通にAndroid Studioで
+
+-----------------------------------
+
+node
+
+cd ~/workspace/github/flutter-test/node
+
+npx tsx watch ./app/entrypoints/server.js
+
+
+
+-----------------------------------
+
+セットアップ
+
+flutter doctor
+
+flutterがなかったら
+
+cd
+
+mkdir development
+
+cd development
+
+git clone https://github.com/flutter/flutter.git -b stable
+
+
+
+.zshrcに追記
+
+export PATH="$PATH:$HOME/development/flutter/bin"
+
+
+----
+
+flutter doctor
+
+で必要な作業
+
+
+iOS
+
+xcodeのインストール
+
+gem install cocoapods
+
+
+Android
+
+Android Studio
+    Tools -> SDK Maneger -> SDK Toolsタブ -> Android SDK Command-line Tools を有効化
+
+flutter doctor --android-licenses
+    y連打
+
+
+----
+
+クリアした後
+
+cd ~/workspace/github/flutter-test/src
+
+
+web
+
+flutter pub get
+flutter run
+
+chromeなんとかかんとかというのが出たら
+1
+
+
+
+android
+
+Android Studio
+    プロジェクト選択 -> ... -> Device選択 -> 起動
+
+flutter devices
+    エミュレータ確認
+
+flutter run
+
+r
+ホットリロード
+R
+ホットリスタート
+
+----
+
+Android Studioから直接編集
+
+Android Studio
+    Setting -> Plugin
+        インストール
+        Dart
+            こっちを先にインストールしないと、変な状態になることがある
+        Flutter
+
+flutter precache
+    dart-sdkなどのツールをインストールしている
+
+Setting -> Language -> Dart
+
+Dart SDK Path
+[user home]/development/flutter/bin/cache/dart-sdk
+
+
+上にあるドロップダウンで
+Androidエミュレータを選択
+
+Debugモードじゃないと、ホットリロードは効かない
+
+
+
+
+iOS
+
+xcodeでシミュレーター起動
+
+xcode -> open developer tool -> simulater
+
+
+flutter run
+
+android studioみたいなIDE化はできないけど、vscode編集、コマンドでrで反映可能
+
+
+シミュレーター起動後は、Android Studioからも起動可能
+
+Android Studioの実行環境選択ドロップダウンからも起動可能
+
+
+
+
+
+web
+
+Android Studio
+
+実行環境をChromeにして起動
+
+ポートを固定
+
+flutter run -d chrome --web-port=5000
+
+ポートを固定しないと、毎回ポートがわかるので、ローカルストレージの取得ができない
+
+Android Studio起動で固定する時
+
+起動ボタンの右の...
+Additional run args
+--web-port=5000
+追加
+この値は、Web専用なので、iOS,android起動時は無視される
+
+-----------------------------------
+
