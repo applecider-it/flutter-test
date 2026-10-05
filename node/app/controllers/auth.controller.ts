@@ -14,6 +14,8 @@ const login = (req: Request, res: Response) => {
   if (token) {
     // 認証成功の場合
 
+    console.log({ token });
+
     return res.json({
       token: token,
     });
